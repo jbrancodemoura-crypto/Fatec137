@@ -1,0 +1,433 @@
+C:\>mkdir Servidor Usuario1 Usuario2
+
+C:\>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é B8DA-CB65
+
+ Pasta de C:\
+
+14/08/2023  10:45    <DIR>          16.20.00001.255_x64
+02/06/2025  13:28    <DIR>          250526-ProjetoCRUD
+22/11/2023  09:16    <DIR>          AMD
+25/08/2025  11:13    <DIR>          apache-ant-1.10.15
+31/01/2023  09:57    <DIR>          apache-maven-3.9.0
+02/09/2022  18:57    <DIR>          cpu-z_2.02-en
+02/03/2026  15:19    <DIR>          DWIII
+18/08/2025  14:20    <DIR>          DWIII-2025-2
+10/04/2025  19:11    <DIR>          inetpub
+25/08/2025  11:08    <DIR>          Insight Files
+10/03/2023  11:16    <DIR>          mongosh
+27/04/2022  16:34    <DIR>          Office
+27/04/2022  16:52    <DIR>          Office2019UELocal
+01/04/2024  04:26    <DIR>          PerfLogs
+25/08/2025  11:20    <DIR>          Program Files
+01/10/2024  22:09    <DIR>          Program Files (x86)
+10/03/2023  11:31    <DIR>          Python311
+25/08/2025  11:21    <DIR>          Python313
+02/03/2026  15:21    <DIR>          Servidor
+16/02/2021  20:11    <DIR>          Trace
+01/10/2024  22:11    <DIR>          Users
+02/03/2026  15:21    <DIR>          Usuario1
+02/03/2026  15:21    <DIR>          Usuario2
+02/03/2026  15:18    <DIR>          Windows
+01/03/2024  13:14    <DIR>          xampp
+               0 arquivo(s)              0 bytes
+              25 pasta(s)   147.262.615.552 bytes disponíveis
+
+C:\>cd C:\DWIII
+
+C:\DWIII>mkdir Servidor Usuario1 Usuario2
+
+C:\DWIII>Usuario1
+'Usuario1' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\DWIII>cd C:\DWIII\Usuario1
+
+C:\DWIII\Usuario1>git init
+Initialized empty Git repository in C:/DWIII/Usuario1/.git/
+
+C:\DWIII\Usuario1>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        programa.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\DWIII\Usuario1>git add programa.txt
+
+C:\DWIII\Usuario1>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   programa.txt
+
+
+C:\DWIII\Usuario1>git config user.name
+
+C:\DWIII\Usuario1>git config.user.email
+git: 'config.user.email' is not a git command. See 'git --help'.
+
+C:\DWIII\Usuario1>git config user.email
+
+C:\DWIII\Usuario1>git config --local user.name "Juan Branco"
+
+C:\DWIII\Usuario1>git config --local user.email "jbrancodemoura@gmail.com"
+
+C:\DWIII\Usuario1>git config user.name
+Juan Branco
+
+C:\DWIII\Usuario1>git config uss
+error: key does not contain a section: uss
+
+C:\DWIII\Usuario1>git config user.email
+jbrancodemoura@gmail.com
+
+C:\DWIII\Usuario1>git commit -m "1.0 - inclusão do nomes iniciais"
+[master (root-commit) 22d14b3] 1.0 - inclusão do nomes iniciais
+ 1 file changed, 2 insertions(+)
+ create mode 100644 programa.txt
+
+C:\DWIII\Usuario1>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   programa.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\DWIII\Usuario1>git add .
+
+C:\DWIII\Usuario1>git commit -m "2.0 - Adicionar mais um nome"
+[master 723c05f] 2.0 - Adicionar mais um nome
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\DWIII\Usuario1>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\DWIII\Usuario1>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\DWIII\Usuario1>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   programa.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\DWIII\Usuario1>git add .
+
+C:\DWIII\Usuario1>git commit -m "3.0 - Eliminado Verso"
+[master 76a53a6] 3.0 - Eliminado Verso
+ 1 file changed, 1 deletion(-)
+
+C:\DWIII\Usuario1>git log
+commit 76a53a63bdb5ed52da06949b9733fcab3068f582 (HEAD -> master)
+Author: Juan Branco <jbrancodemoura@gmail.com>
+Date:   Mon Mar 2 15:43:41 2026 -0300
+
+    3.0 - Eliminado Verso
+
+commit 723c05f8543c55009603e89e4a2cf70bf3dc155d
+Author: Juan Branco <jbrancodemoura@gmail.com>
+Date:   Mon Mar 2 15:41:07 2026 -0300
+
+    2.0 - Adicionar mais um nome
+
+commit 22d14b3e09a81e55c7f868b60395b41318c31d55
+Author: Juan Branco <jbrancodemoura@gmail.com>
+Date:   Mon Mar 2 15:38:54 2026 -0300
+
+    1.0 - inclusão do nomes iniciais
+
+C:\DWIII\Usuario1>git log --oneline
+76a53a6 (HEAD -> master) 3.0 - Eliminado Verso
+723c05f 2.0 - Adicionar mais um nome
+22d14b3 1.0 - inclusão do nomes iniciais
+
+C:\DWIII\Usuario1>git lop -p
+git: 'lop' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+C:\DWIII\Usuario1>git log -p
+commit 76a53a63bdb5ed52da06949b9733fcab3068f582 (HEAD -> master)
+Author: Juan Branco <jbrancodemoura@gmail.com>
+Date:   Mon Mar 2 15:43:41 2026 -0300
+
+    3.0 - Eliminado Verso
+
+diff --git a/programa.txt b/programa.txt
+index 1484509..e4c1ef1 100644
+--- a/programa.txt
++++ b/programa.txt
+@@ -1,3 +1,2 @@
+ Juan Branco de Moura
+ Jojo GoldenWing
+-Verso
+\ No newline at end of file
+
+commit 723c05f8543c55009603e89e4a2cf70bf3dc155d
+Author: Juan Branco <jbrancodemoura@gmail.com>
+Date:   Mon Mar 2 15:41:07 2026 -0300
+
+    2.0 - Adicionar mais um nome
+
+diff --git a/programa.txt b/programa.txt
+index 7858393..1484509 100644
+--- a/programa.txt
++++ b/programa.txt
+@@ -1,2 +1,3 @@
+ Juan Branco de Moura
+-Jojo GoldenWing
+\ No newline at end of file
++Jojo GoldenWing
++Verso
+\ No newline at end of file
+
+commit 22d14b3e09a81e55c7f868b60395b41318c31d55
+Author: Juan Branco <jbrancodemoura@gmail.com>
+Date:   Mon Mar 2 15:38:54 2026 -0300
+
+    1.0 - inclusão do nomes iniciais
+
+diff --git a/programa.txt b/programa.txt
+new file mode 100644
+index 0000000..7858393
+--- /dev/null
++++ b/programa.txt
+@@ -0,0 +1,2 @@
++Juan Branco de Moura
++Jojo GoldenWing
+\ No newline at end of file
+
+C:\DWIII\Usuario1>git log --pretty="format:+Mria da Silva
++Mria da Silva
++Mria da Silva
++Mria da Silva
+
+C:\DWIII\Usuario1>git lop --pertty="format:%an | %en | %s"
+git: 'lop' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+C:\DWIII\Usuario1>git log --pertty="format:%an | %en | %s"
+fatal: unrecognized argument: --pertty=format:%an | %en | %s
+
+C:\DWIII\Usuario1>git lop --pretty="format:%an | %en | %s"
+git: 'lop' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+C:\DWIII\Usuario1>git log --pretty="format:%an | %en | %s"
+Juan Branco | n | 3.0 - Eliminado Verso
+Juan Branco | n | 2.0 - Adicionar mais um nome
+Juan Branco | n | 1.0 - inclusão do nomes iniciais
+
+C:\DWIII\Usuario1>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+        log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\DWIII\Usuario1>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+        log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\DWIII\Usuario1>git add .
+
+C:\DWIII\Usuario1>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore.txt
+        new file:   log.txt
+
+
+C:\DWIII\Usuario1>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore.txt
+        new file:   log.txt
+
+
+C:\DWIII\Usuario1>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore.txt
+        new file:   log.txt
+
+
+C:\DWIII\Usuario1>cd..
+
+C:\DWIII>cd Servidor
+
+C:\DWIII\Servidor>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\DWIII\Servidor>git init --bare
+Initialized empty Git repository in C:/DWIII/Servidor/
+
+C:\DWIII\Servidor>dir
+ O volume na unidade C é Windows
+ O Número de Série do Volume é B8DA-CB65
+
+ Pasta de C:\DWIII\Servidor
+
+02/03/2026  16:07    <DIR>          .
+02/03/2026  15:22    <DIR>          ..
+02/03/2026  16:07               104 config
+02/03/2026  16:07                73 description
+02/03/2026  16:07                23 HEAD
+02/03/2026  16:07    <DIR>          hooks
+02/03/2026  16:07    <DIR>          info
+02/03/2026  16:07    <DIR>          objects
+02/03/2026  16:07    <DIR>          refs
+               3 arquivo(s)            200 bytes
+               6 pasta(s)   153.864.388.608 bytes disponíveis
+
+C:\DWIII\Servidor>cd..
+
+C:\DWIII>cd Usuario1
+
+C:\DWIII\Usuario1>git remote
+
+C:\DWIII\Usuario1>git remote add Git Servidor C:\DWIII\Servidor
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\DWIII\Usuario1>git remote add Servidor C:\DWIII\Servidor
+
+C:\DWIII\Usuario1>remote add GitHub https://www.qualquercoisa.com./projeto.git
+'remote' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\DWIII\Usuario1>git remote add GitHub https://www.qualquercoisa.com./projeto.git
+
+C:\DWIII\Usuario1>git remote add Nuvem 192.929.929
+
+C:\DWIII\Usuario1>git remote
+GitHub
+Nuvem
+Servidor
+
+C:\DWIII\Usuario1>git remote v
+error: unknown subcommand: `v'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+C:\DWIII\Usuario1>git remote -v
+GitHub  https://www.qualquercoisa.com./projeto.git (fetch)
+GitHub  https://www.qualquercoisa.com./projeto.git (push)
+Nuvem   192.929.929 (fetch)
+Nuvem   192.929.929 (push)
+Servidor        C:\DWIII\Servidor (fetch)
+Servidor        C:\DWIII\Servidor (push)
+
+C:\DWIII\Usuario1>git push Servidor master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (9/9), 810 bytes | 405.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To C:\DWIII\Servidor
+ * [new branch]      master -> master
+
+C:\DWIII\Usuario1>cd..
+
+C:\DWIII>cd Usuario2
+
+C:\DWIII\Usuario2>git remote
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\DWIII\Usuario2>git initi
+git: 'initi' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+C:\DWIII\Usuario2>git init
+Initialized empty Git repository in C:/DWIII/Usuario2/.git/
+
+C:\DWIII\Usuario2>git remote
+
+C:\DWIII\Usuario2>git clone C:\DWIII\Servidor ProjetoGIt
+Cloning into 'ProjetoGIt'...
+done.
+
+C:\DWIII\Usuario2>git clone C:\DWIII\Servidor ProjetoGit
+fatal: destination path 'ProjetoGit' already exists and is not an empty directory.
+
+C:\DWIII\Usuario2>cd..
+
+C:\DWIII>cd Usuario1
+
+C:\DWIII\Usuario1>git remote add GitHubaFATEC137 https://github.com/jbrancodemoura-crypto/Fatec137.git
+
+C:\DWIII\Usuario1>git remote
+GitHub
+GitHubaFATEC137
+Nuvem
+Servidor
+
+C:\DWIII\Usuario1>git push GitHubaFATEC137 master
+info: please complete authentication in your browser...
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (9/9), 810 bytes | 270.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jbrancodemoura-crypto/Fatec137.git
+ * [new branch]      master -> master
+
+C:\DWIII\Usuario1>
